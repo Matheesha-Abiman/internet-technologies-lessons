@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .box {
+            width: 100px;
+            /* height: 100px; */
+            border: 1px solid black;
+            text-align: center;
+            font-size: 60px;
+            border-radius: 20px;
+
+        }
+
+        .box-1 {
+            background-color: aqua;
+            align-self: center;
+        }
+
+        .box-2 {
+            background-color: antiquewhite;
+        }
+
+        .box-3 {
+            background-color: blue;
+        }
+
+        .box-4 {
+            background-color: chartreuse;
+            align-self: center;
+        }
+
+        .box-5 {
+            background-color: rgb(241, 108, 230);
+        }
+
+        .box-6 {
+            background-color: rgb(241, 158, 119);
+        }
+
+        .container {
+            height: 60vh;
+            display: flex;
+            /* default */
+            flex-direction: row;
+
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            border: 2px solid black;
+            /* flex-direction: column-reverse;
+            justify-content: center;  */
+            /* default */
+            /* justify-content: flex-start; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* default */
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* align-content: flex-start; */
+            /* align-content: space-around; */
+            /* column-gap: 20px; */
+            /* row-gap: 20px; */
+            /* gap: 20px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Css-Flexbox</h1>
+    <div class="container">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+        <div class="box box-5">5</div>
+        <div class="box box-6">6</div>
+    </div>
+</body>
+
+</html>
