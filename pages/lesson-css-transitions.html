@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        #addToCartBtn {
+            background-color: aqua;
+            border: 3px solid black;
+            padding: 12px 48px;
+            color: black;
+            border-radius: 10px;
+        }
+
+        #addToCartBtn:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+
+            /* transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+
+            transition: 3s ease-in-out;
+        }
+
+        .circle {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50px;
+            background-color: rgb(208, 252, 11);
+
+        }
+
+        .circle:hover {
+            cursor: pointer;
+            background-color: rgb(236, 148, 40);
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transform: translateX(150px);
+            scale: 1.5;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS-transitions</h1>
+    <button id="addToCartBtn">Add To Cart</button>
+    <br>
+    <hr>
+    <div class="circle"></div>
+</body>
+
+</html>
