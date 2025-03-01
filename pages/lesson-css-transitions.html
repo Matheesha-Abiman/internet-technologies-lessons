@@ -44,6 +44,20 @@
             scale: 1.5;
 
         }
+
+        .image-container {
+            width: 200px;
+            height: 200px;
+        }
+
+        .image {
+            width: 100%;
+            transition: transform 3s ease-in-out 1s;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.5) rotate(360deg);
+        }
     </style>
 </head>
 
@@ -53,6 +67,9 @@
     <br>
     <hr>
     <div class="circle"></div>
+    <br>
+    <hr>
+    <div class="image-container"><img class="image" src="/images/25cbbcc4-7179-4d16-87f8-63b3756958e4.jpg" alt=""></div>
 </body>
 
 </html>

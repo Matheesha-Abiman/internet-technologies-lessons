@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-10</title>
+    <style>
+        .box {
+            background-color: rgb(247, 12, 82);
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            animation: go-around 5s ease-in-out infinite 0s;
+        }
+
+        @keyframes go-around {
+
+            0%,
+            100% {
+
+                top: 0;
+                left: 0;
+            }
+
+            25% {
+
+                top: 0;
+                left: calc(100% - 100px);
+                transform: rotate(180deg);
+            }
+
+            50% {
+
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+                transform: rotate(360deg);
+            }
+
+            75% {
+
+                top: calc(100% - 100px);
+                left: 0;
+                transform: rotate(180deg);
+            }
+
+            /* 0%,
+            100% {
+                
+            }
+
+            25% {
+                
+            }
+
+            50% {
+                
+            }
+
+            75% {
+                
+            } */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

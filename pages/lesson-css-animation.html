@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+
+            /* animation-name: down-up;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite; */
+
+            /* animation: down-up 2s ease-in-out infinite 1s; */
+
+            /* animation: background-change 2s ease-in-out infinite 0s; */
+            animation: go-around 5s infinite;
+        }
+
+        @keyframes go-around {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(300px, 0);
+            }
+
+            50% {
+                transform: translate(300px, 300px);
+            }
+
+            75% {
+                transform: translate(0, 300px);
+            }
+
+        }
+
+        /* @keyframes down-up {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(200px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        } */
+
+        /* @keyframes background-change {
+            0% {
+                background-color: aqua;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: blueviolet;
+            }
+        } */
+        /* @keyframes background-change {
+            Form {
+                background-color: aqua;
+            }
+
+            to {
+                background-color: blue;
+            }
+
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Lesson Animation</h1>
+    <div class="box"></div>
+</body>
+
+</html>

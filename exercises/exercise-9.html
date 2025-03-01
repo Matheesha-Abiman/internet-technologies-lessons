@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Cards</title>
+    <style>
+        body {
+            background-color: aqua;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card {
+            border: 1px solid white;
+            height: 200px;
+            width: 200px;
+            border-radius: 30px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px black(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+        }
+
+        .imo {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-size: 20px;
+            font-weight: bold;
+            /* opacity: 0; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <span class="imo">😁</span>
+            <span class="label">Happy</span>
+        </div>
+        <div class="card">
+            <span class="imo">😭</span>
+            <span class="label">Sad</span>
+        </div>
+        <div class="card">
+            <span class="imo">😍</span>
+            <span class="label">Love</span>
+        </div>
+        <div class="card">
+            <span class="imo">🤭</span>
+            <span class="label">Happy2</span>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+    <style>
+        body{
+            margin: 0px;
+            
+            background-color: rgb(168, 246, 246);
+        }
+        .mid-main-div{
+            width: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .square{
+            width: 150px;
+            height: 150px;
+            border-radius: 20%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .square:hover {
+            transform: scale(1.5) ;
+            transition: transform 2s ease-in-out ;            
+             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+         .square:hover .text{
+                 opacity: 1;
+            visibility: visible;
+         }
+        span{
+            position: relative;
+             top: 20%;
+            /* left: 50%; */
+            font-size: 50px;
+            
+        }
+        .text{
+            
+            text-align: center;
+           opacity: 0;
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mid-main-div">
+        <div class="square" id="happy-square">
+            <span class="haha-emoji">😁</span>
+            <h1 class="text">Happy</h1>
+        </div>
+        <div class="square" id="sad-square">
+            <span class="cry-emoji">😭</span>
+            <h1 class="text">Cry</h1>
+        </div>
+        <div class="square" id="love-square">
+            <span class="love-emoji">😍</span>
+            <h1 class="text">Love</h1>
+        </div>
+        <div class="square" id="shy-square">
+            <span class="shy-emoji">🤭</span>
+            <h1 class="text">Shy</h1>
+        </div>
+    </div>
+</body>
+</html> -->
